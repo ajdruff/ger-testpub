@@ -1,0 +1,11 @@
+{
+  "name": "ger-testpub",
+  "version": "1.0.0",
+  "description": "Test npm module for publishing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Druffner <andrew@bluedogsupport.com> (http://bluedogsupport.com)",
+  "license": "MIT"
+}
