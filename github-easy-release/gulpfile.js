@@ -247,7 +247,7 @@ gulp.task('github-release', function (done) {
         token:  "fad5b7bd8f8099ec0efe725e94e33d6089354e62"// To set token, do this : gulp config -c token=YOUR_TOKEN
     }, {
         preset: 'angular' // Or to any other commit message convention you use.
-    });
+    }, done);
     
 });
 
@@ -474,8 +474,14 @@ gulp.task('_release',
             'push-master',
             'create-new-tag',
             'github-release',
-            function (error) {
-                callback(error);
+            function (error,responses) {
+                if (error){
+                    console.log(error)
+                }
+                else{
+                    console.log('conventioinal release completed successfully')
+                }
+                
             })
 )
 
