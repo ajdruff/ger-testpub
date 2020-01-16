@@ -244,8 +244,8 @@ gulp.task('github-release', function (done) {
     
     conventionalGithubReleaser({
         type: "oauth",
-        token: getGitHubToken, // To set token, do this : gulp config -c token=YOUR_TOKEN
-        url: "https://api.github.com"
+        token: getGitHubToken // To set token, do this : gulp config -c token=YOUR_TOKEN
+
     }, {
         preset: 'angular' // Or to any other commit message convention you use.
     }, done);
