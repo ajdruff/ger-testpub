@@ -474,7 +474,7 @@ gulp.task('_release',
             'commit-changes',
             'push-master',
             'create-new-tag',
-            'github-release',
+          
             )
 )
 
