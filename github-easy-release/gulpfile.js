@@ -243,10 +243,11 @@ gulp.task('github-release', function (done) {
 
     conventionalGithubReleaser({
         type: "oauth",
-        token: getGitHubToken()// To set token, do this : gulp config -c token=YOUR_TOKEN
+        token:  "fad5b7bd8f8099ec0efe725e94e33d6089354e62"// To set token, do this : gulp config -c token=YOUR_TOKEN
     }, {
         preset: 'angular' // Or to any other commit message convention you use.
     }, done);
+    done
 });
 
 gulp.task('bump-version', function (cb) {
