@@ -37,7 +37,8 @@
     "readme": "README.md",
     "release_message": "Release {VERSION_NUMBER}",
     "ghpages": false,
-    "release": true
+    "release": true,
+    "token": "f21d34b638d6f140d633bb7c58022d675971904b"
   },
   "repository": {
     "type": "git",
