@@ -475,16 +475,7 @@ gulp.task('_release',
             'push-master',
             'create-new-tag',
             'github-release',
-            function (error,responses) {
-                if (error){
-                    console.log(error.message)
-                    callback(error);
-                }
-                else{
-                    console.log('conventional release completed successfully ' + responses)
-                }
-                
-            })
+            )
 )
 
 gulp.task('release', 
