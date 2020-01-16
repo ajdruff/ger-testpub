@@ -244,7 +244,8 @@ gulp.task('github-release', function (done) {
     
     conventionalGithubReleaser({
         type: "oauth",
-        token:  "fad5b7bd8f8099ec0efe725e94e33d6089354e62"// To set token, do this : gulp config -c token=YOUR_TOKEN
+        token: getGitHubToken // To set token, do this : gulp config -c token=YOUR_TOKEN
+        ,url: 'https://api.github.com'
     }, {
         preset: 'angular' // Or to any other commit message convention you use.
     }, done);
@@ -476,10 +477,11 @@ gulp.task('_release',
             'github-release',
             function (error,responses) {
                 if (error){
-                    console.log(error)
+                    console.log(error.message)
+                    callback(error);
                 }
                 else{
-                    console.log('conventioinal release completed successfully')
+                    console.log('conventional release completed successfully ' + responses)
                 }
                 
             })

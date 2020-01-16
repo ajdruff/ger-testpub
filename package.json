@@ -1,6 +1,6 @@
 {
   "name": "ger-testpub",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Test npm module for publishing",
   "main": "index.js",
   "scripts": {
